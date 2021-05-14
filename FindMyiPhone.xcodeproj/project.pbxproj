@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4795E7E0264EFEC100E02D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E7DF264EFEC100E02D2C /* AppDelegate.swift */; };
+		4795E7E2264EFEC100E02D2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E7E1264EFEC100E02D2C /* SceneDelegate.swift */; };
+		4795E7E4264EFEC100E02D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E7E3264EFEC100E02D2C /* ViewController.swift */; };
+		4795E7E7264EFEC100E02D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4795E7E5264EFEC100E02D2C /* Main.storyboard */; };
+		4795E7E9264EFEC200E02D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4795E7E8264EFEC200E02D2C /* Assets.xcassets */; };
+		4795E7EC264EFEC200E02D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4795E7EA264EFEC200E02D2C /* LaunchScreen.storyboard */; };
+		4795E7F1264EFEC200E02D2C /* FindMyiPhone WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4795E7F0264EFEC200E02D2C /* FindMyiPhone WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4795E7F7264EFEC200E02D2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4795E7F5264EFEC200E02D2C /* Interface.storyboard */; };
+		4795E7F9264EFEC200E02D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4795E7F8264EFEC200E02D2C /* Assets.xcassets */; };
+		4795E800264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4795E7FF264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4795E805264EFEC300E02D2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E804264EFEC300E02D2C /* InterfaceController.swift */; };
+		4795E807264EFEC300E02D2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E806264EFEC300E02D2C /* ExtensionDelegate.swift */; };
+		4795E809264EFEC300E02D2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E808264EFEC300E02D2C /* NotificationController.swift */; };
+		4795E80B264EFEC300E02D2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795E80A264EFEC300E02D2C /* ComplicationController.swift */; };
+		4795E80D264EFEC300E02D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4795E80C264EFEC300E02D2C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4795E7F2264EFEC200E02D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4795E7D4264EFEC100E02D2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4795E7EF264EFEC200E02D2C;
+			remoteInfo = "FindMyiPhone WatchKit App";
+		};
+		4795E801264EFEC300E02D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4795E7D4264EFEC100E02D2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4795E7FE264EFEC300E02D2C;
+			remoteInfo = "FindMyiPhone WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4795E815264EFEC300E02D2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4795E800264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795E819264EFEC300E02D2C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4795E7F1264EFEC200E02D2C /* FindMyiPhone WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4795E7DC264EFEC100E02D2C /* FindMyiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4795E7DF264EFEC100E02D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4795E7E1264EFEC100E02D2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4795E7E3264EFEC100E02D2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4795E7E6264EFEC100E02D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4795E7E8264EFEC200E02D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4795E7EB264EFEC200E02D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4795E7ED264EFEC200E02D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4795E7F0264EFEC200E02D2C /* FindMyiPhone WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FindMyiPhone WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4795E7F6264EFEC200E02D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4795E7F8264EFEC200E02D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4795E7FA264EFEC200E02D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4795E7FF264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FindMyiPhone WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4795E804264EFEC300E02D2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4795E806264EFEC300E02D2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4795E808264EFEC300E02D2C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4795E80A264EFEC300E02D2C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4795E80C264EFEC300E02D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4795E80E264EFEC300E02D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4795E80F264EFEC300E02D2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4795E7D9264EFEC100E02D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795E7FC264EFEC300E02D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4795E7D3264EFEC100E02D2C = {
+			isa = PBXGroup;
+			children = (
+				4795E7DE264EFEC100E02D2C /* FindMyiPhone */,
+				4795E7F4264EFEC200E02D2C /* FindMyiPhone WatchKit App */,
+				4795E803264EFEC300E02D2C /* FindMyiPhone WatchKit Extension */,
+				4795E7DD264EFEC100E02D2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4795E7DD264EFEC100E02D2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4795E7DC264EFEC100E02D2C /* FindMyiPhone.app */,
+				4795E7F0264EFEC200E02D2C /* FindMyiPhone WatchKit App.app */,
+				4795E7FF264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4795E7DE264EFEC100E02D2C /* FindMyiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4795E7DF264EFEC100E02D2C /* AppDelegate.swift */,
+				4795E7E1264EFEC100E02D2C /* SceneDelegate.swift */,
+				4795E7E3264EFEC100E02D2C /* ViewController.swift */,
+				4795E7E5264EFEC100E02D2C /* Main.storyboard */,
+				4795E7E8264EFEC200E02D2C /* Assets.xcassets */,
+				4795E7EA264EFEC200E02D2C /* LaunchScreen.storyboard */,
+				4795E7ED264EFEC200E02D2C /* Info.plist */,
+			);
+			path = FindMyiPhone;
+			sourceTree = "<group>";
+		};
+		4795E7F4264EFEC200E02D2C /* FindMyiPhone WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4795E7F5264EFEC200E02D2C /* Interface.storyboard */,
+				4795E7F8264EFEC200E02D2C /* Assets.xcassets */,
+				4795E7FA264EFEC200E02D2C /* Info.plist */,
+			);
+			path = "FindMyiPhone WatchKit App";
+			sourceTree = "<group>";
+		};
+		4795E803264EFEC300E02D2C /* FindMyiPhone WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4795E804264EFEC300E02D2C /* InterfaceController.swift */,
+				4795E806264EFEC300E02D2C /* ExtensionDelegate.swift */,
+				4795E808264EFEC300E02D2C /* NotificationController.swift */,
+				4795E80A264EFEC300E02D2C /* ComplicationController.swift */,
+				4795E80C264EFEC300E02D2C /* Assets.xcassets */,
+				4795E80E264EFEC300E02D2C /* Info.plist */,
+				4795E80F264EFEC300E02D2C /* PushNotificationPayload.apns */,
+			);
+			path = "FindMyiPhone WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4795E7DB264EFEC100E02D2C /* FindMyiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4795E81A264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone" */;
+			buildPhases = (
+				4795E7D8264EFEC100E02D2C /* Sources */,
+				4795E7D9264EFEC100E02D2C /* Frameworks */,
+				4795E7DA264EFEC100E02D2C /* Resources */,
+				4795E819264EFEC300E02D2C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4795E7F3264EFEC200E02D2C /* PBXTargetDependency */,
+			);
+			name = FindMyiPhone;
+			productName = FindMyiPhone;
+			productReference = 4795E7DC264EFEC100E02D2C /* FindMyiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4795E7EF264EFEC200E02D2C /* FindMyiPhone WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4795E816264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone WatchKit App" */;
+			buildPhases = (
+				4795E7EE264EFEC200E02D2C /* Resources */,
+				4795E815264EFEC300E02D2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4795E802264EFEC300E02D2C /* PBXTargetDependency */,
+			);
+			name = "FindMyiPhone WatchKit App";
+			productName = "FindMyiPhone WatchKit App";
+			productReference = 4795E7F0264EFEC200E02D2C /* FindMyiPhone WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4795E7FE264EFEC300E02D2C /* FindMyiPhone WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4795E812264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone WatchKit Extension" */;
+			buildPhases = (
+				4795E7FB264EFEC300E02D2C /* Sources */,
+				4795E7FC264EFEC300E02D2C /* Frameworks */,
+				4795E7FD264EFEC300E02D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FindMyiPhone WatchKit Extension";
+			productName = "FindMyiPhone WatchKit Extension";
+			productReference = 4795E7FF264EFEC300E02D2C /* FindMyiPhone WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4795E7D4264EFEC100E02D2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4795E7DB264EFEC100E02D2C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4795E7EF264EFEC200E02D2C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4795E7FE264EFEC300E02D2C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 4795E7D7264EFEC100E02D2C /* Build configuration list for PBXProject "FindMyiPhone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4795E7D3264EFEC100E02D2C;
+			productRefGroup = 4795E7DD264EFEC100E02D2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4795E7DB264EFEC100E02D2C /* FindMyiPhone */,
+				4795E7EF264EFEC200E02D2C /* FindMyiPhone WatchKit App */,
+				4795E7FE264EFEC300E02D2C /* FindMyiPhone WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4795E7DA264EFEC100E02D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4795E7EC264EFEC200E02D2C /* LaunchScreen.storyboard in Resources */,
+				4795E7E9264EFEC200E02D2C /* Assets.xcassets in Resources */,
+				4795E7E7264EFEC100E02D2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795E7EE264EFEC200E02D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4795E7F9264EFEC200E02D2C /* Assets.xcassets in Resources */,
+				4795E7F7264EFEC200E02D2C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795E7FD264EFEC300E02D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4795E80D264EFEC300E02D2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4795E7D8264EFEC100E02D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4795E7E4264EFEC100E02D2C /* ViewController.swift in Sources */,
+				4795E7E0264EFEC100E02D2C /* AppDelegate.swift in Sources */,
+				4795E7E2264EFEC100E02D2C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795E7FB264EFEC300E02D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4795E809264EFEC300E02D2C /* NotificationController.swift in Sources */,
+				4795E80B264EFEC300E02D2C /* ComplicationController.swift in Sources */,
+				4795E807264EFEC300E02D2C /* ExtensionDelegate.swift in Sources */,
+				4795E805264EFEC300E02D2C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4795E7F3264EFEC200E02D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4795E7EF264EFEC200E02D2C /* FindMyiPhone WatchKit App */;
+			targetProxy = 4795E7F2264EFEC200E02D2C /* PBXContainerItemProxy */;
+		};
+		4795E802264EFEC300E02D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4795E7FE264EFEC300E02D2C /* FindMyiPhone WatchKit Extension */;
+			targetProxy = 4795E801264EFEC300E02D2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4795E7E5264EFEC100E02D2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4795E7E6264EFEC100E02D2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4795E7EA264EFEC200E02D2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4795E7EB264EFEC200E02D2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4795E7F5264EFEC200E02D2C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4795E7F6264EFEC200E02D2C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4795E810264EFEC300E02D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4795E811264EFEC300E02D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4795E813264EFEC300E02D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				INFOPLIST_FILE = "FindMyiPhone WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		4795E814264EFEC300E02D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				INFOPLIST_FILE = "FindMyiPhone WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		4795E817264EFEC300E02D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				IBSC_MODULE = FindMyiPhone_WatchKit_Extension;
+				INFOPLIST_FILE = "FindMyiPhone WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		4795E818264EFEC300E02D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				IBSC_MODULE = FindMyiPhone_WatchKit_Extension;
+				INFOPLIST_FILE = "FindMyiPhone WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		4795E81B264EFEC300E02D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				INFOPLIST_FILE = FindMyiPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4795E81C264EFEC300E02D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J2F4DNU6CM;
+				INFOPLIST_FILE = FindMyiPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emre.FindMyiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4795E7D7264EFEC100E02D2C /* Build configuration list for PBXProject "FindMyiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4795E810264EFEC300E02D2C /* Debug */,
+				4795E811264EFEC300E02D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4795E812264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4795E813264EFEC300E02D2C /* Debug */,
+				4795E814264EFEC300E02D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4795E816264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4795E817264EFEC300E02D2C /* Debug */,
+				4795E818264EFEC300E02D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4795E81A264EFEC300E02D2C /* Build configuration list for PBXNativeTarget "FindMyiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4795E81B264EFEC300E02D2C /* Debug */,
+				4795E81C264EFEC300E02D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4795E7D4264EFEC100E02D2C /* Project object */;
+}
