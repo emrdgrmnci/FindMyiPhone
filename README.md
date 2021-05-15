@@ -1,7 +1,9 @@
 # FindMyiPhone
 
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
-![Platform](https://img.shields.io/cocoapods/p/WatchShaker.svg?style=flat)
+## Status
+[![Swift](https://img.shields.io/badge/Swift-5.2-%239872AB?style=flat&logo=swift)](https://swift.org)
+![iOS](https://img.shields.io/badge/iOS-14.0-9872AB)
+![watchOS](https://img.shields.io/badge/watchOS-7.0-9872AB)
 
 Check whether iPhone and Apple Watch are connected 
 
