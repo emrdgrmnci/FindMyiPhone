@@ -22,22 +22,12 @@
                                 <color key="textColor" red="0.99861580130000005" green="0.039089243859999998" blue="0.00063127692560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-mA-Lgr">
-                                <rect key="frame" x="184" y="501" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="sendDataToWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haV-zY-Rbu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kg5-IM-b4v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cfl-3w-JTM"/>
                             <constraint firstItem="kg5-IM-b4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLI-Hl-GTo"/>
-                            <constraint firstItem="lD7-mA-Lgr" firstAttribute="top" secondItem="kg5-IM-b4v" secondAttribute="bottom" constant="39" id="aGi-NK-SXK"/>
-                            <constraint firstItem="lD7-mA-Lgr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="cUF-mW-iSK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lD7-mA-Lgr" secondAttribute="trailing" constant="184" id="h26-1n-Td1"/>
                         </constraints>
                     </view>
                     <connections>

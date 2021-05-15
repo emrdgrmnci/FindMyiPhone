@@ -21,12 +21,8 @@ class ViewController: UIViewController {
 
         welcomeLabel.text = "Hoşgeldiniz"
 
-//        let myArray = ["One", "Two", "Three", "Four"]
-//        welcomeLabel.text = myArray.randomElement()
-    }
-
-    @IBAction func sendDataToWatch(_ sender: Any) {
-
+        //        let myArray = ["One", "Two", "Three", "Four"]
+        //        welcomeLabel.text = myArray.randomElement()
     }
 
     func createWCSession() {
@@ -51,14 +47,20 @@ extension ViewController: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated && session.isReachable { // Check if the iPhone is paired with the Apple Watch
             // Do stuff
-            welcomeLabel.text = "Telefonun yanında"
-            if let validSession = self.session, validSession.isReachable {
-                validSession.sendMessage(["iPhone": welcomeLabel.text ?? ""], replyHandler: nil, errorHandler: nil)
+            DispatchQueue.main.async {
+                self.welcomeLabel.textColor = .black
+                self.welcomeLabel.text = "Telefonun yanında"
+                if let validSession = self.session, validSession.isReachable {
+                    validSession.sendMessage(["iPhone": self.welcomeLabel.text ?? ""], replyHandler: nil, errorHandler: nil)
+                }
             }
         } else {
-            welcomeLabel.text = "Telefonunu almayı unutma!"
-            if let validSession = self.session, validSession.isReachable {
-                validSession.sendMessage(["iPhone": welcomeLabel.text ?? ""], replyHandler: nil, errorHandler: nil)
+            DispatchQueue.main.async {
+                self.welcomeLabel.textColor = .systemRed
+                self.welcomeLabel.text = "Telefonunu almayı unutma!"
+                if let validSession = self.session, validSession.isReachable {
+                    validSession.sendMessage(["iPhone": self.welcomeLabel.text ?? ""], replyHandler: nil, errorHandler: nil)
+                }
             }
         }
     }

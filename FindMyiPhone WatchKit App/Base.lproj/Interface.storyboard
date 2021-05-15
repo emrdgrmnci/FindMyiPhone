@@ -11,7 +11,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FindMyiPhone_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Label" id="Slk-3p-sut"/>
+                        <label alignment="left" text="Label" numberOfLines="0" minimumScaleFactor="0.0" id="Slk-3p-sut">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="watchLabel" destination="Slk-3p-sut" id="5N3-kX-qgQ"/>

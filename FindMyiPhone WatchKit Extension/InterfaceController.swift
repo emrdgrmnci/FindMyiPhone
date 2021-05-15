@@ -37,12 +37,14 @@ extension InterfaceController: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated && session.isReachable { // Check if the iPhone is paired with the Apple Watch
             // Do stuff
-            watchLabel.setText("")
+            self.watchLabel.setTextColor(.black)
+            watchLabel.setText("Telefonun yanında")
             let validSession = self.session
             if validSession.isReachable {
                 validSession.sendMessage(["iPhone": watchLabel.setText("")], replyHandler: nil, errorHandler: nil)
             }
         } else {
+            self.watchLabel.setTextColor(.red)
             watchLabel.setText("Telefonunu almayı unutma!")
         }
     }
