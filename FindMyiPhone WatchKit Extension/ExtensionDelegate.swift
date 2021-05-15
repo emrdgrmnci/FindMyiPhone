@@ -6,22 +6,27 @@
 //
 
 import WatchKit
+import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
+    static let shared = ExtensionDelegate()
+    var isBluetoothReachable = false
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        self.watchKitSetup()
     }
-
+    
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
+    
     func applicationWillResignActive() {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, etc.
     }
-
+    
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
         // Sent when the system needs to launch the application in the background to process tasks. Tasks arrive in a set, so loop through and process each one.
         for task in backgroundTasks {
@@ -51,5 +56,36 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             }
         }
     }
+    
+}
 
+extension ExtensionDelegate: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if activationState == .activated && session.isReachable { // Check if the iPhone is paired with the Apple Watch
+            // Do stuff
+            print("ExtensionDelegate", activationState)
+        }
+    }
+    
+    func watchKitSetup() {
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+            
+            // In your WatchKit extension, the value of this property is true when the paired iPhone is reachable via Bluetooth.
+            // On iOS, the value is true when the paired Apple Watch is reachable via Bluetooth and the associated Watch app is running in the foreground.
+            // In all other cases, the value is false.
+            if !session.isReachable {
+                ExtensionDelegate.shared.isBluetoothReachable = false
+            }
+        }
+    }
+    
+    // Called when session.reachable value changes, such as when a user wearing an Apple Watch gets out of range of their iPhone.
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        if !session.isReachable {
+            ExtensionDelegate.shared.isBluetoothReachable = false
+        }
+    }
 }
