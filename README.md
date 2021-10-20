@@ -10,5 +10,5 @@ Check whether iPhone and Apple Watch are connected
 ## Features
 
 - Check connectivity between Apple Watch and iPhone.⌚️📲
-- Notify users when they are away from bluetooth connection range.
+- Notify users when they are away from bluetooth connection range
 
